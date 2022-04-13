@@ -1,3 +1,11 @@
+if [[ ! -d build ]]
+then  
+    echo "the folder build is not existing, it is created now"
+    mkdir build
+fi
+
+rm -fr build/*
+
 pushd build
 cmake ../ && make 
 ./hello_test
