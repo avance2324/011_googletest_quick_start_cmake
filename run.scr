@@ -1,0 +1,5 @@
+pushd build
+cmake ../ && make 
+./hello_test
+
+popd
